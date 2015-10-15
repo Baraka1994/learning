@@ -1,0 +1,370 @@
+// newgradingsystem.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int result;
+int choice;
+int opt;
+
+void grade()
+{
+	if (result >= 70 && result <= 100)
+			{
+         cout << "You have got an A\n\n";
+		 cout << "An A is equivalent to 6 points\n\n";
+			}
+			else if (result >= 60 && result <= 69)
+			{
+         cout << "You have got a B\n\n";
+		 cout << "A B is equivalent to 5 points\n\n";
+			}
+			else if (result >= 55 && result <= 59)
+			{
+         cout << "You have got a C\n\n";
+		 cout << "A C is equivalent to 4 points\n\n";
+			}
+		 else if (result >= 50 && result <= 54)
+			{
+         cout << "You have got a D\n\n";
+		 cout << "A D is equivalent to 3 points\n\n";
+			}
+         else if (result >= 45 && result <= 49)
+			{
+         cout << "You have got an E\n\n";
+		 cout << "An E is equivalent to 2 points\n\n";
+			}
+		 else if (result >= 35 && result <= 44)
+			{
+         cout << "You have got an O\n\n";
+		 cout << "An O is equivalent to 1 point\n\n";
+			}
+		 else if (result >= 0 && result <= 35)
+			{
+         cout << "You have got an F\n\n";
+		 cout << "An F has no points, sorry\n\n";
+			}
+		 
+		 else 
+			{
+         cout << "Result does not exist \n\n";
+			}
+
+}
+
+
+void grading ()
+	{
+			if (result >= 75 && result <= 100)
+			{
+         cout << "You have got a D1\n\n";
+			}
+			else if (result >= 69 && result <= 74)
+			{
+         cout << "You have got a D2\n\n";
+			}
+			else if (result >= 65 && result <= 68)
+			{
+         cout << "You have got a C3\n\n";
+			}
+		 else if (result >= 59 && result <= 64)
+			{
+         cout << "You have got a C4\n\n";
+			}
+         else if (result >= 55 && result <= 58)
+			{
+         cout << "You have got a C5\n\n";
+			}
+		 else if (result >= 49 && result <= 54)
+			{
+         cout << "You have got a C6\n\n";
+			}
+		 else if (result >= 45 && result <= 48)
+			{
+         cout << "You have got a P7\n\n";
+			}
+		 else if (result >= 39 && result <= 44)
+			{
+         cout << "You have got a P8\n\n";
+			}
+		 else if (result >= 0 && result <= 38)
+			{
+				cout << "You have got an F9 \n\n";
+			}
+		 else 
+			{
+         cout << "Result does not exist \n\n";
+			}
+	}
+
+int main()
+{
+	for(int k=1;k<=30;++k)
+	{
+
+	char choice;
+	int opt;
+	cout  <<"\t\t" <<"   " <<"++++++++++++++++++++++++++++++++++++++\n";
+	cout  <<"\t\t" <<"   " <<"+ HELLO, THIS IS THE BISHOP'S SENIOR +\n";
+	cout  <<"\t\t" <<"   " <<"+   SCHOOL MUKONO GRADING SYSTEM     +\n";
+	cout  <<"\t\t" <<"   " <<"++++++++++++++++++++++++++++++++++++++\n\n";
+
+	cout <<"\t\t++++++++++++++++++++++++++++++++++++++++++\n";
+	cout <<"\t\t+ Enter a letter to choose your level of +\n";
+	cout <<"\t\t+  study whose marks you want to grade   +\n";
+	cout <<"\t\t++++++++++++++++++++++++++++++++++++++++++\n\n";
+
+	cout <<"\t\t\t\t A. ORDINARY LEVEL\n";
+	cout <<"\t\t\t\t B. ADVANCED LEVEL   \n";
+
+	cout <<"ENTER AN OPTION \n";
+	cin >> choice;
+
+	if(choice=='a' || choice=='A')
+	{
+		cout <<"\n ORDINARY LEVEL\n";
+		cout<<"\n\nENTER THE RESULT FOR PHYSICS:\n";
+		cin>>result;
+		grading ();
+		
+		cout<<"\n\nENTER THE RESULT FOR BIOLOGY:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR CHEMISTRY:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR MATHS:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR ENGLISH:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR GEOGRAPHY:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR HISTORY:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR KISWAHILI:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR FRENCH:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR LITERATURE:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR COMMERCE:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR AGRICULTURE:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR TECHNICAL DRAWING:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR CHRISTIAN RELIGIOUS EDUCATION :\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR FOOOD AND NUTRITION:\n";
+		cin>>result;
+		grading ();
+
+		cout<<"\n\nENTER THE RESULT FOR ACCOUNTS:\n";
+		cin>>result;
+		grading ();
+	}
+
+	else if(choice=='b' || choice=='B')
+	{
+		
+	cout  <<"\t\t" <<"   " <<"\n ADVANCED LEVEL\n";
+	cout  <<"\t\t" <<"   " <<"++++++++++++++++++++++++++++++++++++++++\n";
+	cout  <<"\t\t" <<"   " <<"++++++++++++++++++++++++++++++++++++++++\n";
+	cout  <<"\t\t" <<"   " <<"++  1. PHYSICS                        ++\n";
+	cout  <<"\t\t" <<"   " <<"++  2. CHEMISTRY                      ++\n";
+	cout  <<"\t\t" <<"   " <<"++  3. BIOLOGY                        ++\n";
+    cout  <<"\t\t" <<"   " <<"++  4. MATHS                          ++\n";
+	cout  <<"\t\t" <<"   " <<"++  5. GENERAL PAPER                  ++\n";
+	cout  <<"\t\t" <<"   " <<"++  6. SUBSIDIARY ICT                 ++\n";
+	cout  <<"\t\t" <<"   " <<"++  7. SUBSIDIARY MATHS               ++\n";
+    cout  <<"\t\t" <<"   " <<"++  8. HISTORY                        ++\n";
+	cout  <<"\t\t" <<"   " <<"++  9. ENTREPRENEURSHIP               ++\n";
+	cout  <<"\t\t" <<"   " <<"++  10.GEOGRAPHY                      ++\n";
+	cout  <<"\t\t" <<"   " <<"++  11.ART                            ++\n";
+    cout  <<"\t\t" <<"   " <<"++  12.DIVINITY                       ++\n";
+	cout  <<"\t\t" <<"   " <<"++  13.LITERATURE                     ++\n";
+	cout  <<"\t\t" <<"   " <<"++  14.ECONOMICS                      ++\n";
+	cout  <<"\t\t" <<"   " <<"++  15.TECHNICAL DRAWING              ++\n";
+    cout  <<"\t\t" <<"   " <<"++  16.FOOD AND NUTRITION             ++\n";
+	cout  <<"\t\t" <<"   " <<"++  17.AGRICULTURE                    ++\n";
+	cout  <<"\t\t" <<"   " <<"+   18.FRENCH                         ++\n";
+	cout  <<"\t\t" <<"   " <<"++++++++++++++++++++++++++++++++++++++++\n";
+	cout  <<"\t\t" <<"   " <<"++++++++++++++++++++++++++++++++++++++++\n";
+
+	cout << "Choose an option   \n";
+	cin >> opt;
+		
+
+	switch(opt)
+	{
+
+	
+	case 1:
+		cout  <<"\t\t" <<"   " <<"++  1. PHYSICS                        ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 2:
+		cout  <<"\t\t" <<"   " <<"++  2. CHEMISTRY                      ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 3:
+		cout  <<"\t\t" <<"   " <<"++  3. BIOLOGY                        ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 4:
+		cout  <<"\t\t" <<"   " <<"++  4. MATHS                          ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 5:
+		cout  <<"\t\t" <<"   " <<"++  5. GENERAL PAPER                  ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 6:
+		cout  <<"\t\t" <<"   " <<"++  6. SUBSIDIARY ICT                 ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 7:
+		cout  <<"\t\t" <<"   " <<"++  7. SUBSIDIARY MATHS               ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 8:
+		cout  <<"\t\t" <<"   " <<"++  8. HISTORY                        ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 9:
+		cout  <<"\t\t" <<"   " <<"++  9. ENTREPRENEURSHIP               ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 10:
+		cout  <<"\t\t" <<"   " <<"++  10.GEOGRAPHY                      ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 11:
+		cout  <<"\t\t" <<"   " <<"++  11.ART                            ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 12:
+		cout  <<"\t\t" <<"   " <<"++  12.DIVINITY                       ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 13:
+		cout  <<"\t\t" <<"   " <<"++  13.LITERATURE                     ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 14:
+		cout  <<"\t\t" <<"   " <<"++  14.ECONOMICS                      ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 15:
+		cout  <<"\t\t" <<"   " <<"++  15.TECHNICAL DRAWING              ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 16:
+		cout  <<"\t\t" <<"   " <<"++  16.FOOD AND NUTRITION             ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 17:
+		cout  <<"\t\t" <<"   " <<"++  17.AGRICULTURE                    ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	
+	case 18:
+		cout  <<"\t\t" <<"   " <<"+   18.FRENCH                         ++\n";
+		cout<<"\nENTER THE MARK PLEASE:\n";
+		cin>>result;
+		grade ();
+	break;
+	default:
+		cout << "\n" <<"invalid option";
+		
+	break;
+			
+	}
+	}
+
+	else
+	{
+		cout << "\nIncorrect option, Please try again\n";
+		
+	}	
+	}
+	return 0;
+}
+

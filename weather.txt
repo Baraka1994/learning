@@ -1,0 +1,61 @@
+// switch.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int option;
+
+	for (int i = 0; i <=10; i++)
+	{
+
+	cout << "\n\t\t*****************************************" <<endl ;
+	cout << "  \t\t** CAN YOU CHOOSE ANY OPTION FROM HERE **" <<endl  ;
+	cout << "  \t\t**           E.G: 1,2,3,4 OR 5         **" <<endl;
+	cout << "  \t\t*****************************************" <<endl <<endl ;
+
+	cout << "\n\t\t*****************************************" <<endl ;
+	cout << "  \t\t**   1: RAIN                           **" <<endl  ;
+	cout << "  \t\t**   2: SANSHINE                       **" <<endl;
+	cout << "  \t\t**   3: SUMMER                         **" <<endl;
+	cout << "  \t\t**   4: WINTER                         **" <<endl;
+	cout << "  \t\t**   5: SPRINT                         **" <<endl;
+	cout << "  \t\t*****************************************" <<endl <<endl ;
+	cin >> option;
+
+	switch (option)
+	{
+	case 1:
+		cout << "\t RAIN"<<endl<<endl ;
+		cout << "\t NEVER SAY THAT IS NOT THE TIME FOR RAIN"<<endl ;
+		break;
+	case 2:
+		cout << "\t SANSHINE"<<endl<<endl ;
+		cout << "\t TOO MUCH SUNCHINE IN KAMPALA"<<endl ;
+		break;
+	case 3:
+		cout << "\t SUMMER"<<endl<<endl ;
+		cout << "\t ARE YOU READY FOR SUMMER TIME"<<endl ;
+		break;
+	case 4:
+		cout << "\t WINTER"<<endl<<endl ;
+		cout << "\t IN AFRICA THERE IS NO WHERE FOR WINTER"<<endl ;
+		break;
+	case 5:
+		cout << "\t SPRINT"<<endl<<endl ;
+		cout << "\t WOOOOH SPRINT COME AS SOON AS GUYS"<<endl ;
+		break;
+	default:
+		cout <<"\t A WRONG OPTION"<<endl ;
+		break;
+	}
+
+	}
+	
+	return 0;
+}
+
